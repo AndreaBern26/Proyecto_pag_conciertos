@@ -12,35 +12,27 @@ body{
 .menu{
     list-style: none;
     background-color: #A85959;
-    padding: 0px;
-    width: 90%;
-    margin: 80px;
     text-align: center;
-  }
+    
+}
 
-  .menu li a{
+.menu li a{
     text-decoration: none;
     color: white;
     padding: 20px;
     display: block;
     max-width: 70%;
-   }
+    padding-right: 60px;
+}
 
-   .menu li{
+.menu li{
     display: inline-block;
     text-align: center;
-   }
+}
    
-   .menu li:hover{
+.menu li:hover{
        background-color: #BE6969;
-   }
-
-
-
-
-
-
-
+}
 
 
 
