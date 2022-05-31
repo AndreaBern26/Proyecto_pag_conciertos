@@ -138,3 +138,8 @@ body{
     text-decoration: none;
     font-family:'Kalam';
 }
+
+.login button:hover{
+    transform: scale(1.2);
+    transition: 0.5s;
+}
