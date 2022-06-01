@@ -24,12 +24,12 @@ body{
     display: block;
     max-width: 70%;
     padding-right: 60px;
+    text-align: center;
+
 }
 
 .menu li{
     text-align: center;
-    align-items: baseline;
-}
    
 .menu li:hover{
        background-color: #BE6969;
