@@ -12,7 +12,8 @@ body{
 .menu{
     list-style: none;
     background-color: #A85959;
-    text-align: center;
+    display: flex;
+    justify-content: space-between;
     
 }
 
@@ -26,12 +27,13 @@ body{
 }
 
 .menu li{
-    display: inline-block;
     text-align: center;
+    align-items: baseline;
 }
    
 .menu li:hover{
        background-color: #BE6969;
+       
 }
 
 
