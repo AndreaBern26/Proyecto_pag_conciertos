@@ -24,13 +24,12 @@ body{
     display: block;
     max-width: 70%;
     text-align: center;
-    text-align: center;
+    justify-content: center;
 }
 
 .menu li{
     text-align: center;
     display: flex;
-    justify-content: center;
 }
 
 .menu li:hover{
