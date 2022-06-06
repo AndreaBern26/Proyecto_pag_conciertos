@@ -1,5 +1,5 @@
 
-let conciertos_json = JSON.parse(base_datos); //convierte cadenas JSON en objetos JavaScript
+let conciertos_json = JSON.parse(conciertos); //convierte cadenas JSON en objetos JavaScript
 let lista = "";
 
 for (let i = 0; i < conciertos_json.length;i++){
@@ -9,7 +9,7 @@ for (let i = 0; i < conciertos_json.length;i++){
           conciertos_json[i].plazas + "<p>";
 }
 
-document.getElementsByClassName('content')[0].innerHTML = lista;
+document.getElementsByClassName('conciertos')[0].innerHTML = lista;
 
 /*
 function concierto_to_html(titulo, descr, tipo_musica, precio, fecha, lugar, horario, edad_min, plazas, img) {
