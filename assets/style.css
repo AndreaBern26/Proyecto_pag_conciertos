@@ -10,10 +10,17 @@ body{
 
 
 .menu{
+    list-style: none;
     background-color: #A85959;
     display: flex;
     border-radius: 5px;
+    justify-content: center;
+    width: 1055px;
+    max-width: 1055px;
+    margin-left: auto;
+    margin-top: %;
     padding-left: 0%;
+    padding: 0;
 }
 
 .menu li a{
@@ -28,7 +35,7 @@ body{
 
 .menu li{
     text-align: center;
-    display: flex;    
+    display: inline-block;    
 }
 
 .menu li:hover{
