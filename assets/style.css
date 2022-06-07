@@ -12,7 +12,6 @@ body{
 .menu{
     list-style: none;
     background-color: #A85959;
-    display: flex;
     justify-content: space-between;
     display: flex;
     justify-content: center;
@@ -35,10 +34,6 @@ body{
 .menu li:hover{
        background-color: #BE6969;
 
-}
-
-.navegacion{
-  
 }
 
 
