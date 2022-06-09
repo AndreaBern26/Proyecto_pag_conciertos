@@ -1,11 +1,15 @@
 
 let concierto = '';
 
+//Display all concerts
+
 for (var i = 0; i < conciertos.length; i++) {
 
   concierto += '<div class="concierto">';
   concierto += '<div class="div-image">';
+  concierto += '<a href="evento.html" alt="'+conciertos[i].titulo+'">';
   concierto += '<img class="image" src="'+conciertos[i].img+'" alt="'+conciertos[i].titulo+'">';
+  concierto += '</a>';
   concierto += '</div>';
   concierto += '<div class="div-titulo">';
   concierto += '<h3 class="titulo">'+ conciertos[i].titulo +'</h3>';
