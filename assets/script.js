@@ -2,10 +2,9 @@
 let concierto = '';
 
 //Display all concerts
-
 for (var i = 0; i < conciertos.length; i++) {
 
-  concierto += '<div class="concierto">';
+  concierto += '<div class="concierto" id="'+conciertos[i].id+'" onclick>';
   concierto += '<div class="div-image">';
   concierto += '<a href="evento.html" alt="'+conciertos[i].titulo+'">';
   concierto += '<img class="image" src="'+conciertos[i].img+'" alt="'+conciertos[i].titulo+'">';
@@ -41,5 +40,4 @@ for (var i = 0; i < conciertos.length; i++) {
   concierto += '</div>';
 
 }
-
 document.querySelector('article').innerHTML = concierto;
