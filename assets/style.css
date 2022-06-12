@@ -1,16 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
-
-html{
-    height: 100%;
-}
-
 *{
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Nunito', sans-serif;
-    text-decoration: none;
 
 }
 body{
@@ -23,15 +12,10 @@ body{
 .menu{
     background-color: #A85959;
     display: flex;
-<<<<<<< Updated upstream
     border-radius: 5px;
     padding-left: 0%;
-=======
-    justify-content: space-between;
-    display: flex;
-    justify-content: center;
->>>>>>> Stashed changes
 }
+
 .menu li a{
     text-decoration: none;
     color: white;
@@ -48,9 +32,11 @@ body{
 }
 
 .menu li:hover{
-       background-color: #BE6969;
+       background-color: #7e4242;
+       border-radius: 5px;
+       transition: background-color 0.9s
+}
 
-<<<<<<< Updated upstream
 
 
 /*Contenido*/
@@ -98,19 +84,16 @@ h3 {
 .image {
   height: 100%;
 }
-=======
-}
-
->>>>>>> Stashed changes
 
 
 /*Guille*/
 
 
+
 footer{
     width: 100%;
     padding: 50px 0px;
-    
+
     background-color: #F8F4EAs;
     mask-size: cover;
 }
