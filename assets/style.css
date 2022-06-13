@@ -98,8 +98,7 @@ h3 {
 footer{
     width: 100%;
     padding: 50px 0px;
-
-    background-color: #F8F4EAs;
+    background-color: #F8F4EA;
     mask-size: cover;
 }
 
@@ -109,7 +108,7 @@ footer{
     justify-content: space-between;
     max-width: 1200px;
     margin: auto;
-    margin-top: 100px;
+    margin-top: 0;
 }
 
 .box__footer{
@@ -127,19 +126,21 @@ footer{
     margin-top: 20px;
     font-weight: 500;
     color: #7a7a7a;
-    font-size: 18px;
+    font-size: 13px;
 }
 
 .box__footer h2{
-    margin-bottom: 30px;
+    margin-bottom: 15px;
     color: #343434;
     font-weight: 700;
+    font-size: 16px;
 }
 
 .box__footer a{
     margin-top: 10px;
     color: #7a7a7a;
     font-weight: 600;
+    font-size: 15px;
 }
 
 .box__footer a:hover{
