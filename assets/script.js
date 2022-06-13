@@ -1,43 +1,42 @@
 
 let concierto = '';
 
-//Display all concerts
-for (var i = 0; i < conciertos.length; i++) {
+function display_concierto(concierto) {
+  let conciert = '';
 
-  concierto += '<div class="concierto" id="'+conciertos[i].id+'" onclick>';
-  concierto += '<div class="div-image">';
-  concierto += '<a href="evento.html" alt="'+conciertos[i].titulo+'">';
-  concierto += '<img class="image" src="'+conciertos[i].img+'" alt="'+conciertos[i].titulo+'">';
-  concierto += '</a>';
-  concierto += '</div>';
-  concierto += '<div class="div-titulo">';
-  concierto += '<h3 class="titulo">'+ conciertos[i].titulo +'</h3>';
-  concierto += '</div>';
-  concierto += '<div class="div-descripcion">';
-  concierto += '<p class="descripcion"><strong>Descripcion:</strong> '+conciertos[i].descr+'</p>';
-  concierto += '</div>';
-  concierto += '<div class="div-tipo-musica">';
-  concierto += '<p class="tipo-musica"><strong>Genero Musical:</strong> '+conciertos[i].tipo_musica+'</p>';
-  concierto += '</div>';
-  concierto += '<div class="div-precio">';
-  concierto += '<p class="precio"><strong>Precio:</strong> '+conciertos[i].precio+'€'+'</p>';
-  concierto += '</div>';
-  concierto += '<div class="div-fecha">';
-  concierto += '<p class="fecha"><strong>Fecha:</strong> '+conciertos[i].fecha+'</p>';
-  concierto += '</div>';
-  concierto += '<div class="div-lugar">';
-  concierto += '<p class="lugar"><strong>Lugar:</strong> '+conciertos[i].lugar+'</p>';
-  concierto += '</div>';
-  concierto += '<div class="div-horario">';
-  concierto += '<p class="horario"><strong>Horario:</strong> '+conciertos[i].horario+'</p>';
-  concierto += '</div>';
-  concierto += '<div class="div-edad-minima">';
-  concierto += '<p class="edad-minima"><strong>Edad mínima:</strong> '+conciertos[i].edad_min+'</p>';
-  concierto += '</div>';
-  concierto += '<div class="div-plazas">';
-  concierto += '<p class="plazas"><strong>Plazas:</strong> '+conciertos[i].plazas+'</p>';
-  concierto += '</div>';
-  concierto += '</div>';
-
+  conciert += '<div class="concierto" id="'+concierto.id+'">';
+  conciert += '<div class="div-image">';
+  conciert += '<a href="evento.html" alt="'+concierto.titulo+'">';
+  conciert += '<img class="image" src="'+concierto.img+'" alt="'+concierto.titulo+'">';
+  conciert += '</a>';
+  conciert += '</div>';
+  conciert += '<div class="div-titulo">';
+  conciert += '<h3 class="titulo">'+ concierto.titulo +'</h3>';
+  conciert += '</div>';
+  conciert += '<div class="div-descripcion">';
+  conciert += '<p class="descripcion"><strong>Descripcion:</strong> '+concierto.descr+'</p>';
+  conciert += '</div>';
+  conciert += '<div class="div-tipo-musica">';
+  conciert += '<p class="tipo-musica"><strong>Genero musical:</strong> '+concierto.tipo_musica+'</p>';
+  conciert += '</div>';
+  conciert += '<div class="div-precio">';
+  conciert += '<p class="precio"><strong>Precio:</strong> '+concierto.precio+'€'+'</p>';
+  conciert += '</div>';
+  conciert += '<div class="div-fecha">';
+  conciert += '<p class="fecha"><strong>Fecha:</strong> '+concierto.fecha+'</p>';
+  conciert += '</div>';
+  conciert += '<div class="div-lugar">';
+  conciert += '<p class="lugar"><strong>Lugar:</strong> '+concierto.lugar+'</p>';
+  conciert += '</div>';
+  conciert += '<div class="div-horario">';
+  conciert += '<p class="horario"><strong>Horario:</strong> '+concierto.horario+'</p>';
+  conciert += '</div>';
+  conciert += '<div class="div-edad-minima">';
+  conciert += '<p class="edad-minima"><strong>Edad minima:</strong> '+concierto.edad_min+'</p>';
+  conciert += '</div>';
+  conciert += '<div class="div-plazas">';
+  conciert += '<p class="plazas"><strong>Plazas:</strong> '+concierto.plazas+'</p>';
+  conciert += '</div>';
+  conciert += '</div>';
+  return conciert;
 }
-document.querySelector('article').innerHTML = concierto;

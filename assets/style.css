@@ -1,14 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
 *{
+    box-sizing: border-box;
+
+}
+body{
+  @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Nunito', sans-serif;
   text-decoration: none;
-
-}
-body{
-    font-family:'Kalam';
 }
 
 /*Jean Carla*/
@@ -45,6 +45,20 @@ body{
 
 
 /*Contenido*/
+.article-h2 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 40px;
+  text-shadow: 2px 2px 3px #7f4242;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+.container-conciertos {
+  border: 3px solid rgba(20, 20, 20, 0.8);
+  border-radius: 5px;
+  background-color: rgba(250, 240, 240, 0.1);
+}
 
 .conciertos {
   display: grid;
@@ -247,6 +261,14 @@ footer{
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
+
+.article-h2 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 36px;
+  text-shadow: 2px 2px 3px #7f4242;
+}
+
   .cabecera{
       display: inline-block;
       flex-direction: column;
