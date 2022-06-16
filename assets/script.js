@@ -17,9 +17,9 @@ class concierto {
 
   display_concierto() {
     let conciert = '';
-    conciert += '<div class="concierto" onclick="script_concierto.js" id="'+this.id+'">';
+    conciert += '<div class="concierto" id="'+this.id+'">';
     conciert += '<div class="div-image">';
-    conciert += '<a class="concierto-link" href="concierto.html" alt="'+this.titulo+'">';
+    conciert += '<a class="concierto-link" href="concierto.html?titulo='+this.titulo+'" alt="'+this.titulo+'">';
     conciert += '<img class="image" src="'+this.img+'" alt="'+this.titulo+'">';
     conciert += '</a>';
     conciert += '</div>';
