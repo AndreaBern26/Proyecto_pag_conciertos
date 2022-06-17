@@ -19,7 +19,7 @@ class concierto {
     let conciert = '';
     conciert += '<div class="concierto" id="'+this.id+'">';
     conciert += '<div class="div-image">';
-    conciert += '<a class="concierto-link" href="concierto.html?titulo='+this.titulo+'" alt="'+this.titulo+'">';
+    conciert += '<a class="concierto-link" href="concierto.html" alt="'+this.titulo+'">';
     conciert += '<img class="image" src="'+this.img+'" alt="'+this.titulo+'">';
     conciert += '</a>';
     conciert += '</div>';
@@ -62,4 +62,31 @@ function textToObject(c) {
     array.push(objecto);
   }
   return array;
+}
+
+function concertNotFound() {
+  let cnf = '<div class="concierto-not-found">';
+  cnf += '<h2 id="concert-not-found">Concert not found</h2>';
+  cnf += '</div>';
+  return cnf;
+}
+
+document.getElementById('search_button').onclick = function search_function() {
+  let searchedValue;
+  let input = document.getElementById('search_input');
+  let filter = input.value.toLowerCase();
+  for (let i = 0; i < array_conciertos.length; i++) {
+    if (filter === array_conciertos[i].titulo) {
+      searchedValue = array_conciertos[i].display_concierto();
+      document.querySelector('.container-conciertos1').innerHTML = searchedValue;
+      i = array_conciertos.length;
+    }
+    else if (filter === "") {
+      location.reload();
+    }
+    else {
+      let notFound = concertNotFound();
+      document.querySelector('.container-conciertos1').innerHTML = notFound;
+    }
+  }
 }

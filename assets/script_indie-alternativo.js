@@ -1,14 +1,4 @@
 //Display musical genre selection
-/*
-for (var i = 0; i < conciertos.length; i++) {
-
-  if (array_conciertos[i].tipo_musica == "Indie" || array_conciertos[i].tipo_musica == "indie" || array_conciertos[i].tipo_musica == "Alternativo" || array_conciertos[i].tipo_musica == "alternativo" ||array_conciertos[i].tipo_musica == "Indie/Alternativo" || array_conciertos[i].tipo_musica == "indie/alternativo") {
-    concierto += display_concierto(conciertos[i]);
-  }
-}
-
-document.querySelector('.conciertos').innerHTML = concierto;
-*/
 
 let concierto_indieAlternativo = '';
 
