@@ -78,18 +78,6 @@ body{
 
 
 
-/*Pestañas conciertos*/
-.container-pestañas{
-  border: 3px solid rgba(20, 20, 20, 0.8);
-  background-color: rgba(250, 240, 240, 0.1);
-  border-radius: 5px;
-  padding: 10px;
-  text-align: justify;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
 
 
 /*Contenido*/
@@ -174,8 +162,65 @@ h3 {
 
 
 
+/*Pestañas conciertos*/
+
+h1{ font-size: 3em;}
+h2{ font-size: 2em;}
+h3{ font-size: 1.5em;}
+
+.contenedor{
+  max-width: 1400px;
+  margin: auto;
+}
+
+#concierto-especifico .contenedor{
+  text-align: center;
+  padding: 200px 12px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#concierto-especifico .texto{
+  width: 100%;
+  max-width: 600px;
+  text-align: initial;
+  padding-left: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#concierto-especifico .h1{
+  margin-top: 0px;
+  font-size: 2.7em;
+}
+
+#concierto-especifico .img-contenedor{
+  background-size: cover;
+  background-position: center center;
+  height: 500px;
+  width: 400px; 
+  padding-top: 100px;
+}
+
+button{
+  font-size: 1.25em;
+  font-weight: bold;
+  padding: 10px 30px;
+  border-radius: 5px;
+  border: 2px solid rgba(0,0,0,0.3);
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+  color: white;
+  background-color: #7e4242;
+  text-align: center;
+}
 
 
+
+
+
+
+/*Footer*/
 
 footer{
     width: 100%;
