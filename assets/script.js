@@ -17,12 +17,13 @@ class concierto {
 
   display_concierto() {
     let conciert = '';
-    conciert += '<div class="concierto" id="'+this.id+'">';
+    conciert += '<div class="concierto" id="concierto-'+this.id+'">';
     conciert += '<div class="div-image">';
-    conciert += '<a class="concierto-link" href="concierto.html" alt="'+this.titulo+'">';
-    conciert += '<img class="image" src="'+this.img+'" alt="'+this.titulo+'">';
+    conciert += '<a class="concierto-link" onclick="search_concert(this)" alt="'+this.titulo+'">';
+    conciert += '<img class="image" id="'+this.id+'" src="'+this.img+'" alt="'+this.titulo+'">';
     conciert += '</a>';
     conciert += '</div>';
+    conciert += '<div class="div-concierto">';
     conciert += '<div class="div-titulo">';
     conciert += '<h3 class="titulo">'+ this.titulo +'</h3>';
     conciert += '</div>';
@@ -49,6 +50,7 @@ class concierto {
     conciert += '</div>';
     conciert += '<div class="div-plazas">';
     conciert += '<p class="plazas"><strong>Plazas:</strong> '+this.plazas+'</p>';
+    conciert += '</div>';
     conciert += '</div>';
     conciert += '</div>';
     return conciert;
@@ -80,6 +82,7 @@ document.getElementById('search_button').onclick = function search_function() {
       searchedValue = array_conciertos[i].display_concierto();
       document.querySelector('.container-conciertos1').innerHTML = searchedValue;
       i = array_conciertos.length;
+
     }
     else if (filter === "") {
       location.reload();
@@ -88,5 +91,19 @@ document.getElementById('search_button').onclick = function search_function() {
       let notFound = concertNotFound();
       document.querySelector('.container-conciertos1').innerHTML = notFound;
     }
+  }
+}
+
+
+function search_concert(sel) {
+  console.log(sel)
+  let selection = sel.getAttribute('alt');
+  for (let i = 0; i < array_conciertos.length; i++) {
+    if (selection === array_conciertos[i].titulo) {
+      selection = array_conciertos[i].display_concierto();
+      document.querySelector('.container-conciertos1').innerHTML = selection;
+      window.scrollTo(0, 0);
+    }
+
   }
 }
