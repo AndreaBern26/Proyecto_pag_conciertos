@@ -111,19 +111,6 @@ body{
   background-color: rgba(255, 190, 250, 0.1);
 }
 
-.container-conciertos1 > .concierto > .div-image {
-  height: 100%;
-}
-
-.container-conciertos1 > .concierto > .div-image > .concierto-link > .image {
-  display: block;
-  margin: auto;
-  width: 50%;
-  height: 100%;
-  max-height: 450px;%;
-  border-radius: 10px;
-}
-
 
 
 .conciertos {
@@ -365,12 +352,50 @@ footer{
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
 
-  .container-conciertos1 > .concierto > .div-image > .concierto-link > .image {
-    display: block;
-    margin: auto;
-    width: 100%;
-    height: 100%;
+  .container-conciertos1 > .concierto {
+    text-align: justify;
+    padding: 20px 40px 20px 40px;
+    background-color: rgba(255, 190, 250, 0.1);
   }
+
+  .container-conciertos1 > .concierto > .div-image {
+    height: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+
+
+  }
+
+  .container-conciertos1 > .concierto > .div-image > .concierto-link > .image {
+    padding-top: 0;
+    display: block;
+    width: 100%;
+    height: 300px;
+
+  }
+  .container-conciertos1 > .concierto > .div-concierto {
+    padding-top: 300px;
+  }
+  .container-conciertos1 > .concierto > .div-concierto > *{
+    font-size: 18px;
+    text-align: center;
+    margin-left: 0;
+  }
+  .container-conciertos1 > .concierto > .div-concierto > .div-descripcion {
+    max-height: 120px;
+
+  }
+  .container-conciertos1 > .concierto > .div-concierto > .div-descripcion > .descripcion {
+    max-height: 140px;
+    white-space: normal;
+    overflow: scroll;
+    text-overflow: clip;
+    padding-top: 0;
+  }
+
+
 
 .article-h2 {
   text-align: center;
@@ -475,6 +500,51 @@ footer{
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
+
+
+  .container-conciertos1 > .concierto {
+    text-align: justify;
+    padding: 20px 40px 20px 40px;
+    background-color: rgba(255, 190, 250, 0.1);
+  }
+
+  .container-conciertos1 > .concierto > .div-image {
+    height: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+
+
+  }
+
+  .container-conciertos1 > .concierto > .div-image > .concierto-link > .image {
+    padding-top: 0;
+    display: block;
+    width: 100%;
+    height: 300px;
+
+  }
+  .container-conciertos1 > .concierto > .div-concierto {
+    padding-top: 300px;
+  }
+  .container-conciertos1 > .concierto > .div-concierto > *{
+    font-size: 18px;
+    text-align: center;
+    margin-left: 0;
+  }
+  .container-conciertos1 > .concierto > .div-concierto > .div-descripcion {
+    max-height: 120px;
+
+  }
+  .container-conciertos1 > .concierto > .div-concierto > .div-descripcion > .descripcion {
+    max-height: 140px;
+    white-space: normal;
+    overflow: scroll;
+    text-overflow: clip;
+    padding-top: 0;
+  }
+
 
   .cabecera{
       display: flex;
@@ -677,9 +747,7 @@ footer{
     text-overflow: clip;
     overflow: scroll;
   }
-  .image {
-    width: 100%;
-  }
+
   h3 {
     text-align: center;
     text-transform: uppercase;
@@ -689,7 +757,55 @@ footer{
     height: 200px;
   }
   .image {
+    width: 100%;
     height: 100%;
   }
+
+  .container-conciertos1 > .concierto > .div-image {
+    height: 100%;
+  }
+
+  .container-conciertos1 > .concierto > .div-image > .concierto-link > .image {
+    padding-top: 80px;
+    display: block;
+    margin: auto;
+    width: 50%;
+    height: 100%;
+    max-height: 400px;
+    border-radius: 0;
+  }
+  .container-conciertos1 {
+    display: inline;
+    gap: 40px 50px;
+    grid-template-columns: auto auto auto;
+    padding: 10px 40px 10px 40px;
+    background-color: rgba(255, 190, 250, 0.1);
+  }
+  .container-conciertos1 > .concierto > .div-image > .concierto-link > .image {
+    display: grid;
+    float: left;
+    width: 50%;
+    height: 100%;
+    max-width: 500px;
+    border-radius: 0;
+  }
+  .container-conciertos1 > .concierto > .div-concierto > *{
+    font-size: 18px;
+    text-align: left;
+    margin-left: 31em;
+  }
+  .container-conciertos1 > .concierto > .div-concierto > .div-descripcion {
+    max-height: 120px;
+  }
+  . > .concierto > .div-concierto > .div-descripcion > .descripcion {
+    max-height: 140px;
+    white-space: normal;
+    overflow: scroll;
+    text-overflow: clip;
+  }
+  .container-conciertos1 > .concierto > .div-concierto {
+    padding-top: 0;
+  }
+
 
 }
